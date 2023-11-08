@@ -1,0 +1,119 @@
+/* --- Reset --- */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+html {
+    color-scheme: dark light;
+}
+
+body {
+    min-height: 100vh;
+}
+
+img, picture, svg, video {
+    display: block;
+    max-width: 100%;
+}
+/* --- Reset --- */
+
+/* --- Variables --- */
+:root {
+    --bg-img-layer: -10;
+    --nav-layer: 10;
+    
+}
+/* --- Variables --- */
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+h1 {
+    padding-left: 100px;
+    font-size: 100px;
+    max-width: 70%;
+}
+
+h2 {
+    font-size: 100px;
+    max-width: 40%;
+    padding-left: 100px;
+}
+
+#places {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+.tabs {
+    display: block;
+    max-width: 15%;
+}
+
+ .text {
+    padding-top: 10px;
+}
+
+#sidebars {
+    display: grid;
+    justify-items: end;
+}
+
+#food {
+    display: flex;
+    writing-mode: vertical-rl;
+    justify-content: space-between;
+    background-color: #5ea3ec;
+    grid-column-start: 8;
+    grid-column-end: 8;
+    grid-row-start: 1;
+    grid-row-end: 14;
+    padding: 10px;
+}
+
+#retail {
+    display: flex;
+    writing-mode: vertical-rl;
+    justify-content: space-between;
+    background-color: #f64444;
+    grid-column-start: 9;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 14;
+    padding: 10px;
+}
+
+#community {
+    display: flex;
+    writing-mode: vertical-rl;
+    background-color: #ffb400;
+    justify-content: space-between;
+    grid-column-start: 10;
+    grid-column-end: 10;
+    grid-row-start: 1;
+    grid-row-end: 14;
+    padding: 10px;
+}
+
+.english {
+    writing-mode: vertical-rl;
+    align-self: center;
+    justify-self: center;
+    font-weight: bold;
+    
+}
+
+.chinese{
+    writing-mode: horizontal-tb;
+    justify-self: flex-start;
+}
